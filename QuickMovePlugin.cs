@@ -1,4 +1,4 @@
-﻿using Aki.Reflection.Patching;
+﻿using StayInTarkov;
 using BepInEx;
 using DrakiaXYZ.QuickMoveToContainer.Helpers;
 using EFT.InventoryLogic;
@@ -10,10 +10,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
+using InteractionsHandlerClass = ItemMovementHandler;
+
 namespace DrakiaXYZ.QuickMoveToContainer
 {
     [BepInPlugin("xyz.drakia.quickmovetocontainer", "DrakiaXYZ-QuickMoveToContainer", "1.0.2")]
-    [BepInDependency("com.spt-aki.core", "3.8.0")]
+    //[BepInDependency("com.spt-aki.core", "3.8.0")]
     public class QuickMovePlugin : BaseUnityPlugin
     {
         private void Awake()
